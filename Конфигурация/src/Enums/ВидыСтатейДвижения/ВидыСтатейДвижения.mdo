@@ -26,4 +26,11 @@
       <value>Расход</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="87f8278d-08e2-49a1-bccb-b8ee4b0216ce">
+    <name>Перевод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перевод</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

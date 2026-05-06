@@ -28,8 +28,31 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <registerRecords>AccumulationRegister.ОстаткиДенег</registerRecords>
+  <registerRecords>AccumulationRegister.ОборотыДенег</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="153f7a61-3018-47b9-8245-f48bf87a0346">
+    <name>СтатьяДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья движения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДвиженияДенег</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ВидСтатьиДвижения</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ВидыСтатейДвижения.EnumValue.Перевод</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="85053783-8bbe-453f-ad67-3a6ad05f83c8">
     <name>КошелекОтправитель</name>
     <synonym>
