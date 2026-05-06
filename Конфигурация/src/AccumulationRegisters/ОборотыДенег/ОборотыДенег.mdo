@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8fc1acb-8617-4d79-9c7c-f9c8dc223ad5">
+  <producedTypes>
+    <selectionType typeId="1539827d-02d1-4044-b932-617671997b2e" valueTypeId="f33e7b31-dfe0-4354-9958-049a904ec827"/>
+    <listType typeId="98e1bedf-e217-4f25-ab2d-cb5a50228ec8" valueTypeId="e8b45632-aa88-4f1b-8a0e-c5daebe982ad"/>
+    <managerType typeId="2b11c841-fbfa-4a60-ae20-74ebbada24e3" valueTypeId="b6d33982-6b51-4455-8c45-2e994b33c7f2"/>
+    <recordSetType typeId="fd3143a2-1537-42f9-9576-080d0da1d166" valueTypeId="1ddf242b-d4bd-4e98-a6c0-b31d55291935"/>
+    <recordKeyType typeId="6919f0a9-cd5e-41ba-8ffb-c900a6893865" valueTypeId="b1b65714-37fc-43ed-b3c4-7e0043c3cd0f"/>
+    <recordType typeId="7589877f-4cd6-40de-a52c-3c3393f01ab8" valueTypeId="17fe13c7-0f51-43f7-be25-4b31968c3b07"/>
+  </producedTypes>
+  <name>ОборотыДенег</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обороты денег</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="57eb616f-29b4-45f9-88ed-fb4e3cc04d63">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="2ae17854-1dce-439a-ae8e-940ddda5e87e">
+    <name>Кошелек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кошелек</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Кошельки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c498c506-2c8d-4c3b-9576-a46fcb3bdca8">
+    <name>СтатьяДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья движения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДвиженияДенег</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a34bd5ab-6901-4ec5-a618-f1e4e0f0d5ef">
+    <name>ВидСтатьиДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид статьи движения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыСтатейДвижения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

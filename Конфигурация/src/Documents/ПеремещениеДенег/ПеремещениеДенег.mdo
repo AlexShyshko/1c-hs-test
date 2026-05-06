@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d71a051c-2e53-4dbc-a5ed-a430732410b7">
+  <producedTypes>
+    <objectType typeId="cb8b9181-926b-48e5-9618-62b4e20ddc00" valueTypeId="2c1c4fa9-8e10-4167-9e06-b90434ffee55"/>
+    <refType typeId="1821e881-3884-40c7-9367-78a15e10dcd1" valueTypeId="42d3e522-eef5-4d7a-a919-34239b9f2f97"/>
+    <selectionType typeId="772b629a-b6d0-4b10-85c0-14577f902b04" valueTypeId="5cd906d3-0c3e-483b-96c8-74bc6e01e626"/>
+    <listType typeId="56112154-865c-4af2-8cdc-cbd81ba034b7" valueTypeId="cd18593f-3872-4519-a711-e7f61b5839b3"/>
+    <managerType typeId="56a46ed7-5a31-4d08-9295-3e70234cd325" valueTypeId="96094db3-5deb-42bc-b28c-eca78ebd32f5"/>
+  </producedTypes>
+  <name>ПеремещениеДенег</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перемещение денег</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПеремещениеДенег.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Перемещение денег</value>
+  </objectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.ОстаткиДенег</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="85053783-8bbe-453f-ad67-3a6ad05f83c8">
+    <name>КошелекОтправитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кошелек отправитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Кошельки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="336915d4-be77-4923-a38c-67e0dc6cecd8">
+    <name>КошелекПолучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кошелек получатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Кошельки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1aceb40b-54d3-4805-be38-b621b210d8ec">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="927f45db-f625-4055-8bb9-42c2cd04b686">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

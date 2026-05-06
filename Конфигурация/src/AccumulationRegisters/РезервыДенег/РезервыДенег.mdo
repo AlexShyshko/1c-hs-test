@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="61cbb92d-5518-41b3-91e6-c35fb96cee7c">
+  <producedTypes>
+    <selectionType typeId="7b1ad1f1-fbe4-4d94-ad3a-b4bcdb09cb7d" valueTypeId="4f6cdb8f-047d-418d-a381-7ea59c43bb57"/>
+    <listType typeId="d3adffa9-4a15-4cbe-a1e9-bb5c4f60265b" valueTypeId="747cfcfb-91f5-4013-bdb3-444692eba039"/>
+    <managerType typeId="0c29d696-c953-4fb0-85ba-605c8ed1aea4" valueTypeId="4c4f3071-1f63-4919-b7d2-22e47a789660"/>
+    <recordSetType typeId="428a3b54-7228-43f3-8e23-f0d204b523e3" valueTypeId="565a62de-b347-4353-a011-9fe4ce13eed7"/>
+    <recordKeyType typeId="b59be8cb-f784-4a32-b6a5-2b31d706681d" valueTypeId="86992e6d-b300-43a3-a1b0-f7f1d3fff192"/>
+    <recordType typeId="a7fd9102-2e9e-4483-880b-318510a5ebe3" valueTypeId="5b6f0323-120d-481f-91e7-22e7cd54e41d"/>
+  </producedTypes>
+  <name>РезервыДенег</name>
+  <synonym>
+    <key>ru</key>
+    <value>Резервы денег</value>
+  </synonym>
+  <comment>Доп. функционал</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="82eb73b0-3d42-4787-8bdb-541c3087ce93">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="9f815567-2203-40d7-b8d1-b4e51d25ba03">
+    <name>СтатьяДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья движения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДвиженияДенег</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0842129e-2fb3-4cec-9393-44c6ee0f920a">
+    <name>Месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

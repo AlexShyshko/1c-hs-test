@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b99a2985-ac0a-4865-a844-7b9e7c57996f">
+  <producedTypes>
+    <objectType typeId="5b343681-e968-4dbc-8710-d3712be50776" valueTypeId="c4483eab-a258-4206-ba22-4848a368933c"/>
+    <managerType typeId="7e0c2190-aca2-4a9b-9cc3-f8649b110b68" valueTypeId="6b36f211-ca25-4b04-9dad-f347507a63ae"/>
+  </producedTypes>
+  <name>ОстатокДенег</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остаток денег</value>
+  </synonym>
+  <comment>4.	Отчет, позволяющий получить остаток денег в разрезе кошельков на произвольную дату</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОстатокДенег.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="3419db98-7fd0-49a6-86a4-681af7eff924">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

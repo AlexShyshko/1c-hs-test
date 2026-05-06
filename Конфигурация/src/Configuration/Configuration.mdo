@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e9f3d9b1-1841-4d26-a55a-5af9c62cfdf0">
+  <name>Конфигурация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Конфигурация</value>
+  </synonym>
+  <comment>Хьюмен систем тестовое</comment>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="0ab84f37-3785-44cf-9432-be7cf5a5d674"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="fb1cd803-96b7-4986-882e-e2332f46dd5c"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="9b28fb83-f512-4c59-afde-36deaacfa18a"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="fb30ea6d-3e6c-48ed-bac0-c4472fa0b3aa"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="dfc0db8e-528a-4a8f-b969-dae4321f1746"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="68583949-0a8f-43ee-b8d4-81540f3a42cb"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="d74c3cfc-f612-4b71-a2bc-2c04ab7554f0"/>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
+  <compatibilityMode>8.5.1</compatibilityMode>
+  <languages uuid="a8b8bd9f-98e6-4d73-b04b-71ae5f506651">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <catalogs>Catalog.ДвиженияДенег</catalogs>
+  <catalogs>Catalog.Кошельки</catalogs>
+  <documents>Document.ПеремещениеДенег</documents>
+  <documents>Document.ПриходДенег</documents>
+  <documents>Document.РасходДенег</documents>
+  <documents>Document.РезервированиеДенег</documents>
+  <enums>Enum.ВидыСтатейДвижения</enums>
+  <reports>Report.ДоходыРасходы</reports>
+  <reports>Report.ОстатокДенег</reports>
+  <accumulationRegisters>AccumulationRegister.ОборотыДенег</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ОстаткиДенег</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.РезервыДенег</accumulationRegisters>
+</mdclass:Configuration>

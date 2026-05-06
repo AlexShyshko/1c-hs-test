@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51d1eee4-9979-40f3-b17e-e84531a8d6d0">
+  <producedTypes>
+    <objectType typeId="115bb4e3-67c7-45a0-b817-d71d28e4a5c9" valueTypeId="0ac36241-7c88-4e1b-9149-ef36db07d38e"/>
+    <refType typeId="8aa3d79a-ccc2-4ad9-ad8d-2d823824977b" valueTypeId="4f1c56ac-f55d-4ffb-b94a-0425072b0057"/>
+    <selectionType typeId="aa039281-6cc3-4639-8933-4f28afa1a445" valueTypeId="88102ae7-6ae0-4122-92bc-5e6b915f48e4"/>
+    <listType typeId="40c0a907-19fa-4aa2-b3e2-f050a6ef9e29" valueTypeId="b18053f3-505f-4a6c-adf7-b10a10bb8446"/>
+    <managerType typeId="a9138e2f-158f-4bc3-9287-1283584b0453" valueTypeId="ff10bcb4-5c47-4fbc-8335-031647704757"/>
+  </producedTypes>
+  <name>ПриходДенег</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приход денег</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриходДенег.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Приход денег</value>
+  </objectPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.ОстаткиДенег</registerRecords>
+  <registerRecords>AccumulationRegister.ОборотыДенег</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="1bce985e-e763-46c8-83d9-d809d41d7b91">
+    <name>Кошелек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кошелек</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Кошельки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e5cb66dc-b6be-42cd-83ab-9cc7a8445210">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="c3bd7a90-669c-47e8-a7e3-e03206cec4b4">
+    <producedTypes>
+      <objectType typeId="31b1f105-dc9d-48ef-9be2-a89a3bd4fa44" valueTypeId="f6748a0c-14ff-4a58-9884-65622122a54c"/>
+      <rowType typeId="1fa15900-3ce7-425e-a70e-6c7a749f7560" valueTypeId="fd87faf2-4b10-4fe9-80a6-fd33848f7f57"/>
+    </producedTypes>
+    <name>ТабличнаяЧасть</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табличная часть</value>
+    </synonym>
+    <attributes uuid="5e768b9f-3c08-413a-8eb8-4eb5052044d1">
+      <name>СтатьяДвижения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статья движения</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ДвиженияДенег</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4cf4de38-0b22-4653-a2a2-9ec83d2b85ce">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+  <templates uuid="b30a4f10-47f5-4e6a-a91d-aa29d80ff695">
+    <name>Печать</name>
+  </templates>
+  <commands uuid="b0c56a9f-1301-4000-8b1d-88d361a196bf">
+    <name>Печать</name>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.ПриходДенег</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Print</picture>
+    </picture>
+    <shortcut>Ctrl+P</shortcut>
+  </commands>
+</mdclass:Document>

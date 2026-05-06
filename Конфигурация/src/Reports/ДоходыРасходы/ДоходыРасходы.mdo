@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee5c4f8b-0914-4b97-89a0-ca670f5b7db7">
+  <producedTypes>
+    <objectType typeId="6c9d6741-a368-454c-8f6b-0abfa4ba13e5" valueTypeId="44661f33-da69-4058-9b8a-b3b373187609"/>
+    <managerType typeId="19439d8a-64ca-4a1b-b29b-1c7c58201177" valueTypeId="292f9e6b-34ab-40a3-b924-6c504402b17c"/>
+  </producedTypes>
+  <name>ДоходыРасходы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доходы расходы</value>
+  </synonym>
+  <comment>5.	Отчет, позволяющий получить сумму доходов, расходов за произвольный период времени в разрезе кошельков и статей доходов/расходов</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДоходыРасходы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="9db2fe12-7d1e-4ca8-8162-877218cf8ffa">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b40aa392-e1c6-4e77-a3b8-12a99058bb86">
+  <producedTypes>
+    <objectType typeId="a367e99e-a630-424f-b32d-83bd95ea16ed" valueTypeId="217ac903-b899-4fbb-9a36-67fa27f61cd3"/>
+    <refType typeId="c4d8e5b6-4a43-4ec4-9c13-161742f9331a" valueTypeId="c5bcc2e7-377b-49a6-8848-f378fe78ff7b"/>
+    <selectionType typeId="359e3b18-0472-4a3d-9414-4434459887b8" valueTypeId="2f50b50c-2262-4c7d-b15c-98e10ee63ba5"/>
+    <listType typeId="57eb8745-2bdb-4f94-ae3e-d4e07db1da30" valueTypeId="b2e0b316-26f3-44cf-91b1-fb21c6553dde"/>
+    <managerType typeId="91756176-ed68-4ee5-b451-ae13e192caf5" valueTypeId="002d2ce9-d1d8-4fb6-a4a6-c99a8f7e4249"/>
+  </producedTypes>
+  <name>Кошельки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кошельки</value>
+  </synonym>
+  <comment>к примеру: кредитная карточка и кошелек</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Кошельки.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Кошельки.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Кошелек</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>
